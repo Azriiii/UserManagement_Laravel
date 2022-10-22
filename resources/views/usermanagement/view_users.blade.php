@@ -15,7 +15,7 @@
         }
 
     </style>
-    
+
     <header class="mb-3">
         <a href="#" class="burger-btn d-block d-xl-none">
             <i class="bi bi-justify fs-3"></i>
@@ -37,7 +37,7 @@
                     </nav>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
@@ -109,7 +109,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class="col-md-4">
                                         <label>Status</label>
                                     </div>
@@ -117,12 +117,12 @@
                                         <div class="form-group position-relative has-icon-left mb-4">
                                             <fieldset class="form-group">
                                                 <select class="form-select" name="status" id="status">
-                                                    <option value="{{ $data[0]->status }}" {{ ( $data[0]->status == $data[0]->status) ? 'selected' : ''}}> 
+                                                    <option value="{{ $data[0]->status }}" {{ ( $data[0]->status == $data[0]->status) ? 'selected' : ''}}>
                                                         {{ $data[0]->status }}
                                                     </option>
                                                     @foreach ($userStatus as $key => $value)
                                                     <option value="{{ $value->type_name }}"> {{ $value->type_name }}</option>
-                                                    @endforeach  
+                                                    @endforeach
                                                 </select>
                                                 <div class="form-control-icon">
                                                     <i class="bi bi-bag-check"></i>
@@ -139,12 +139,12 @@
                                         <div class="form-group position-relative has-icon-left mb-4">
                                             <fieldset class="form-group">
                                                 <select class="form-select" name="role_name" id="role_name">
-                                                    <option value="{{ $data[0]->role_name }}" {{ ( $data[0]->role_name == $data[0]->role_name) ? 'selected' : ''}}> 
+                                                    <option value="{{ $data[0]->role_name }}" {{ ( $data[0]->role_name == $data[0]->role_name) ? 'selected' : ''}}>
                                                         {{ $data[0]->role_name }}
                                                     </option>
                                                     @foreach ($roleName as $key => $value)
                                                     <option value="{{ $value->role_type }}"> {{ $value->role_type }}</option>
-                                                    @endforeach  
+                                                    @endforeach
                                                 </select>
                                                 <div class="form-control-icon">
                                                     <i class="bi bi-bag-check"></i>
@@ -170,11 +170,11 @@
     <footer>
         <div class="footer clearfix mb-0 text-muted ">
             <div class="float-start">
-                <p>2021 &copy; Soeng Souy</p>
+                <p>2022 &copy; Amine AZRI</p>
             </div>
             <div class="float-end">
                 <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                href="http://soengsouy.com">Soeng Souy</a></p>
+                href="">Amine AZRI</a></p>
             </div>
         </div>
     </footer>

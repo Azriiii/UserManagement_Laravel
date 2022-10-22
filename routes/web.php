@@ -8,6 +8,11 @@ use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\LockScreen;
+use App\Htpp\Controllers\FacebookController;
+use App\Htpp\Controllers\GoogleController;
+use App\Htpp\Controllers\TwitterController;
+use App\Htpp\Controllers\GithubController;
+use App\Htpp\Controllers\LinkedinController;
 
 
 /*
@@ -87,3 +92,21 @@ Route::get('form/view/detail', [App\Http\Controllers\FormController::class, 'vie
 Route::get('form/view/detail/{id}', [App\Http\Controllers\FormController::class, 'viewDetail'])->middleware('auth');
 Route::post('form/view/update', [App\Http\Controllers\FormController::class, 'viewUpdate'])->name('form/view/update');
 Route::get('delete/{id}', [App\Http\Controllers\FormController::class, 'viewDelete'])->middleware('auth');
+//------------------------ Social Login --------------------------------//
+
+Route::get('facebook/login', [App\Http\Controllers\FacebookController::class, 'provider'])->name('facebook.login');
+Route::get('facebook/callback', [App\Http\Controllers\FacebookController::class, 'handleCallback'])->name('facebook.callback');
+
+
+Route::get('google/login', [App\Http\Controllers\GoogleController::class, 'provider'])->name('google.login');
+Route::get('google/callback', [App\Http\Controllers\GoogleController::class, 'handleCallback'])->name('google.callback');
+
+Route::get('twitter', [App\Http\Controllers\TwitterController::class, 'handle'])->name('twitter');
+Route::get('callback', [App\Http\Controllers\TwitterController::class, 'callbackHandle'])->name('twitter.callback');
+
+Route::get('login/github', [App\Http\Controllers\GithubController::class, 'redirectToProvider'])->name('github.login');
+Route::get('login/github/callback', [App\Http\Controllers\GithubController::class, 'handleProviderCallback']);
+
+
+Route::get('linkedin/login', [App\Http\Controllers\LinkedinController::class, 'provider'])->name('linkedin.login');
+Route::get('linkedin/callback', [App\Http\Controllers\LinkedinController::class, 'providerCallback'])->name('linkedin.user');

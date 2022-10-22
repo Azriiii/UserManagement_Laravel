@@ -12,7 +12,7 @@
     <div class="page-heading">
         <h3>Profile Statistics</h3>
     </div>
-    {{-- message --}}
+    {{-- Dessage --}}
     {!! Toastr::message() !!}
     <div class="page-content">
         <section class="row">
@@ -150,7 +150,7 @@
                                                 <use
                                                     xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
                                             </svg>
-                                            <h5 class="mb-0 ms-3">Indonesia</h5>
+                                            <h5 class="mb-0 ms-3">Africa</h5>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -182,9 +182,9 @@
                                                 <td class="col-3">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
-                                                            <img src="assets/images/faces/5.jpg">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                        <p class="font-bold ms-3 mb-0">Laravel</p>
                                                     </div>
                                                 </td>
                                                 <td class="col-auto">
@@ -195,9 +195,9 @@
                                                 <td class="col-3">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
-                                                            <img src="assets/images/faces/2.jpg">
+                                                            <img src="https://karac.ch/storage/articles/October2017/2yYgvRCiyJUb0aoz20Wz.jpg">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                        <p class="font-bold ms-3 mb-0">Blade</p>
                                                     </div>
                                                 </td>
                                                 <td class="col-auto">
@@ -282,7 +282,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                
+
                                             <div class="col-md-4">
                                                 <label>Status</label>
                                             </div>
@@ -335,8 +335,8 @@
                                 <img src="assets/images/faces/4.jpg">
                             </div>
                             <div class="name ms-4">
-                                <h5 class="mb-1">Hank Schrader</h5>
-                                <h6 class="text-muted mb-0">@johnducky</h6>
+                                <h5 class="mb-1">Nydhal jaffel</h5>
+                                <h6 class="text-muted mb-0">@jaffel</h6>
                             </div>
                         </div>
                         <div class="recent-message d-flex px-4 py-3">
@@ -344,8 +344,8 @@
                                 <img src="assets/images/faces/5.jpg">
                             </div>
                             <div class="name ms-4">
-                                <h5 class="mb-1">Dean Winchester</h5>
-                                <h6 class="text-muted mb-0">@imdean</h6>
+                                <h5 class="mb-1">Hamza jaffel</h5>
+                                <h6 class="text-muted mb-0">@jaffel</h6>
                             </div>
                         </div>
                         <div class="recent-message d-flex px-4 py-3">
@@ -353,8 +353,8 @@
                                 <img src="assets/images/faces/1.jpg">
                             </div>
                             <div class="name ms-4">
-                                <h5 class="mb-1">John Dodol</h5>
-                                <h6 class="text-muted mb-0">@dodoljohn</h6>
+                                <h5 class="mb-1">Amyne jaffel</h5>
+                                <h6 class="text-muted mb-0">@jaffel</h6>
                             </div>
                         </div>
                         <div class="px-4">
@@ -378,11 +378,11 @@
     <footer>
         <div class="footer clearfix mb-0 text-muted">
             <div class="float-start">
-                <p>2021 &copy; Soeng Souy</p>
+                <p>2022 &copy; Amine AZRI</p>
             </div>
             <div class="float-end">
                 <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                href="http://soengsouy.com">Soeng Souy</a></p>
+                href="https://www.facebook.com">Amine AZRI</a></p>
             </div>
         </div>
     </footer>
